@@ -92,6 +92,13 @@
             transition: transform 0.3s ease;
         }
 
+        .gallery-item1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
         .gallery-item:hover img {
             transform: scale(1.05);
         }
@@ -132,46 +139,320 @@
     <div class="container">
         <header>
             <h1>张宇的游戏开发作品集</h1>
-            <p>独立游戏开发者 | 全栈技术实践者 | UE5技术探索者</p>
+            <p>独立游戏开发者</p>
         </header>
-
-        <!-- 项目示例结构 -->
+        
         <article class="project-card">
-            <h2>《纸狼》2D格斗游戏 (2024.7-2024.10)</h2>
+            <h2>《纸狼》：致敬《死神VS火影》的2D格斗游戏 (2024.3-2024.6)</h2>
             <div class="tech-stack">
-                <span class="tech-tag">C++11</span>
-                <span class="tech-tag">Win32 API</span>
-                <span class="tech-tag">GDI+</span>
-                <span class="tech-tag">物理引擎</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">WINAPI</span>
             </div>
-            
-            <h3>核心亮点</h3>
-            <ul class="feature-list">
-                <li>原生实现60FPS双缓冲渲染引擎</li>
-                <li>像素级精度的碰撞检测系统</li>
-                <li>支持实时编辑的地图编辑器</li>
-                <li>可回放的对战录像系统</li>
-            </ul>
+            <div class="gallery-item1">
+                <img src="pic\image.png" alt="主菜单">
+            </div>
+            <h3>项目概述</h3>
+            <p>《纸狼》是一款深受经典格斗游戏《死神VS火影》启发的2D格斗游戏，完全基于C++和WINAPI构建。此项目旨在锤炼并实践一年来所学的C++及WINAPI知识，同时初步探索游戏开发的完整生命周期。通过该项目，我对游戏引擎的底层运作机制、用户交互的设计以及性能优化的重要手段，均有了更为深刻的理解。</p>
+    
+            <h3>核心功能与亮点</h3>
+<ul class="feature-list">
+    <li><strong>格斗体验：</strong>模仿《死神VS火影》角色扮演模式，流畅操控角色，展开激烈对战。</li>
+    <li><strong>动态背景：</strong>采用动态背景，增强视觉效果，提升沉浸感。</li>
+    <li><strong>智能摄像机：</strong>自动跟随玩家，保持角色处于视野中心，并限制边界内移动。</li>
+    <li><strong>精确碰撞检测：</strong>优化碰撞体积设计，避免穿模和瞬移，提升游戏流畅性。</li>
+    <li><strong>地图编辑：</strong>支持自定义地图创建，实时保存和快速测试。</li>
+    <li><strong>游戏回放：</strong>自动录制每场对战，支持进度展示和回放暂停，方便战术分析。</li>
+</ul>
 
-            <h3>技术成果</h3>
-            <ul class="feature-list">
-                <li>代码量4800+行，0第三方依赖</li>
-                <li>帧率稳定60FPS（i5-1135G7）</li>
-                <li>获评课程设计最优（95/100）</li>
-            </ul>
+<h3>技术实现</h3>
+<ul class="feature-list">
+    <li><strong>底层框架：</strong>使用WINAPI构建稳定的窗口和消息循环。</li>
+    <li><strong>图形渲染：</strong>利用GDI和双缓冲技术，减少画面闪烁。</li>
+    <li><strong>动画系统：</strong>通过关键帧动画和同步播放技术，确保流畅自然的动画效果。</li>
+    <li><strong>地图管理：</strong>动态加载和编辑地图，提高扩展性和可玩性。</li>
+</ul>
 
+    
+            <h3>个人贡献</h3>
+            <ul class="feature-list">
+                <li>独立完成了游戏的核心逻辑设计和实现，包括角色控制、碰撞检测、动画播放等关键模块。</li>
+                <li>主导设计并实现了地图编辑器和游戏回放功能，显著提升了游戏的可玩性和用户体验。</li>
+                <li>通过对代码结构和算法的优化，大幅提高了游戏的运行效率和稳定性。</li>
+            </ul>
+    
+            <h3>成果展示</h3>
             <div class="gallery-grid">
-                <!-- 实际部署时替换为正确图片URL -->
                 <div class="gallery-item">
-                    <img src="placeholder.jpg" alt="战斗场景">
+                    <img src="pic\image.png" alt="主菜单">
                 </div>
                 <div class="gallery-item">
-                    <img src="placeholder.jpg" alt="地图编辑器">
+                    <img src="pic\image-1.png" alt="战斗场景">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-2.png" alt="攻击动作">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-3.png" alt="招架/弹反动作">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-4.png" alt="空中坠落动作">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-5.png" alt="受击动作及游戏结束界面">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-6.png" alt="地图编辑器">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-7.png" alt="放置方块">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-8.png" alt="放置小平台">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-9.png" alt="回放界面（进度条展示）">
+                </div>
+                <div class="gallery-item">
+                    <img src="pic\image-10.png" alt="回放暂停界面">
                 </div>
             </div>
         </article>
 
-        <!-- 其他项目卡片结构类似... -->
+        <article class="project-card">
+            <h2>UE5 3D动作游戏 - 独立开发者 (2024.7 - 2024.10)</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">UE5蓝图</span>
+                <span class="tech-tag">动画蒙太奇</span>
+                <span class="tech-tag">物理判定</span>
+            </div>
+            <div class="gallery-item1"><img src="pic\image-47.png" alt="攻击连段"></div>
+            <h3>项目概述</h3>
+            <p>本项目是一款基于UE5独立开发的3D动作游戏，目标是在3个月内实现核心战斗、敌人AI及关卡场景，打造完整的可玩版本。项目涵盖程序开发、动画调优与关卡设计，深入探索战斗机制与手感优化。</p>
+            <p>借鉴经典ACT游戏：</p>
+            <ul>
+                <li><strong>《只狼》：</strong>弹反机制、精准锁定、短无敌帧闪避、血量UI优化。</li>
+                <li><strong>《浪人崛起》：</strong>锁定状态下摄像机优化，提升战斗可读性。</li>
+                <li><strong>《原神》：</strong>平A连段系统，增强打击节奏，避免战斗单调。</li>
+            </ul>
+            
+            <h3>核心功能与亮点</h3>
+            <ul class="feature-list">
+                <li><strong>战斗系统：</strong> 
+                    <ul>
+                        <li><strong>敌人锁定：</strong>鼠标中键触发球形检测，自动锁定最近敌人，UI标识目标；锁定后摄像机调整视角，增强战斗信息可读性。</li>
+                        <li><strong>八向移动：</strong>非锁定时自由旋转移动，锁定状态下采用2D混合空间动态调整方向，实现流畅运动。</li>
+                        <li><strong>闪避与垫步：</strong>短无敌帧设定，结合Root Motion播放闪避动画，确保战斗节奏紧凑。</li>
+                        <li><strong>血量显示：</strong>小型敌人血条置于头顶，Boss血条固定于屏幕底部，优化战斗UI信息呈现。</li>
+                    </ul>
+                </li>
+                <li><strong>攻击与连段系统：</strong>
+                    <ul>
+                        <li><strong>连击逻辑：</strong>基于攻击计数器动态切换不同攻击动画，实现自然连击。</li>
+                        <li><strong>攻击判定优化：</strong>采用Anim Notify触发精确攻击判定，并结合武器碰撞检测，确保打击精准度。</li>
+                        <li><strong>手感优化：</strong>前后摇控制，避免动画突兀中断，同时确保攻击节奏流畅，提升战斗体验。</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>技术实现</h3>
+            <ul class="feature-list">
+                <li><strong>UE5动画与物理判定优化：</strong>
+                    <ul>
+                        <li><strong>动画系统：</strong>使用Montage确保攻击动画连贯性，并结合Root Motion提升动作真实感。</li>
+                        <li><strong>物理碰撞：</strong>采用LineTrace与球形检测，提高攻击命中精度，避免误判。</li>
+                    </ul>
+                </li>
+                <li><strong>交互体验优化：</strong>
+                    <ul>
+                        <li><strong>输入优化：</strong>优化输入响应，确保攻击、弹反、闪避的延迟控制在合理范围，保证操作流畅性。</li>
+                        <li><strong>摄像机调整：</strong>非锁定状态下保持自由视角，锁定后自动调整，确保战斗信息清晰。</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>项目成果</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="pic\image-23.png" alt="开始界面"></div>
+                <div class="gallery-item"><img src="pic\image-41.png" alt="未锁定状态、自由移动"></div>
+                <div class="gallery-item"><img src="pic\image-24.png" alt="锁定敌人、名称血量显示"></div>
+                <div class="gallery-item"><img src="pic\image-43.png" alt="攻击连段"></div>
+                <div class="gallery-item"><img src="pic\image-28.png" alt="攻击连段"></div>
+                <div class="gallery-item"><img src="pic\image-46.png" alt="攻击连段"></div>
+                <div class="gallery-item"><img src="pic\image-29.png" alt="攻击连段"></div>
+                <div class="gallery-item"><img src="pic\image-47.png" alt="攻击连段"></div>
+                <div class="gallery-item"><img src="pic\image-31.png" alt="锁定状态、八向移动"></div>
+                <div class="gallery-item"><img src="pic\image-34.png" alt="锁定状态、八向移动"></div>
+                <div class="gallery-item"><img src="pic\image-35.png" alt="锁定状态、八向移动"></div>
+                <div class="gallery-item"><img src="pic\image-36.png" alt="闪避"></div>
+                <div class="gallery-item"><img src="pic\image-37.png" alt="闪避"></div>
+                <div class="gallery-item"><img src="pic\image-38.png" alt="闪避"></div>
+                <div class="gallery-item"><img src="pic\image-40.png" alt="闪避"></div>
+                <div class="gallery-item"><img src="pic\image-79.png" alt="跳跃"></div>
+                <div class="gallery-item"><img src="pic\image-48.png" alt="结束界面"></div>
+                <div class="gallery-item"><img src="pic\image-70.png" alt="测试场景"></div>
+                <div class="gallery-item"><img src="pic\image-71.png" alt="测试场景"></div>
+                <div class="gallery-item"><img src="pic\image-73.png" alt="测试场景"></div>
+                <div class="gallery-item"><img src="pic\image-76.png" alt="测试场景"></div>
+                <div class="gallery-item"><img src="pic\image-75.png" alt="测试场景"></div>
+                <div class="gallery-item"><img src="pic\image-72.png" alt="测试场景"></div>
+            </div>
+            
+            <p>本项目成功构建了完整的3D动作游戏框架，实现了八向移动、闪避、弹反、连段攻击及锁定系统等核心战斗机制。通过开发，我掌握了UE5动画系统、物理判定、交互优化等关键技能，并具备独立开发3D动作游戏的能力。</p>
+            
+        </article>
+
+
+        <article class="project-card">
+            <h2>UE俯视角RogueLike游戏Demo</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">UE5蓝图</span>
+                <span class="tech-tag">动画系统</span>
+                <span class="tech-tag">AI行为树</span>
+            </div>
+            <div class="gallery-item1"><img src="pic\image-66.png" alt="游戏界面"></div>
+            <h3>项目概述</h3>
+            <p>本项目是一款基于UE5开发的俯视角RogueLike动作游戏，独立完成核心功能的设计与实现。该项目不仅是对UE5引擎蓝图系统的深入学习与实践，也是对游戏开发流程的系统探索。通过此项目，我在游戏引擎基础功能、战斗逻辑构建、AI行为控制等方面积累了丰富的经验，并为未来更复杂的游戏开发奠定了坚实基础。</p>
+            <h3>核心功能与亮点</h3>
+            <ul class="feature-list">
+                <li><strong>角色操控与动画系统：</strong>
+                    <ul>
+                        <li><strong>精准移动控制：</strong>通过键盘输入实时调整角色坐标，实现基础平移。计算角色当前速度，并依据速度方向调整朝向，确保角色转身流畅自然。</li>
+                        <li><strong>动画系统：</strong>采用半身独立控制机制，实现角色上下半身动作的分离控制。上半身逻辑：攻击时优先播放攻击动画，否则与下半身动作同步；下半身逻辑：依据角色移动速度，动态切换行走或奔跑动画，确保角色表现自然生动。</li>
+                    </ul>
+                </li>
+                <li><strong>远程攻击机制：</strong>
+                    <ul>
+                        <li><strong>攻击方向控制：</strong>角色自动朝向鼠标点击的目标方向，确保攻击方向精准。</li>
+                        <li><strong>火球投射：</strong>在攻击动画的指定帧触发火球生成事件，并同步播放投射特效。火球沿直线飞行，3秒后自动销毁，若途中碰撞到障碍物或敌人，则立即触发爆炸效果，展现华丽的战斗表现。</li>
+                    </ul>
+                </li>
+                <li><strong>受击反馈系统：</strong>
+                    <ul>
+                        <li><strong>伤害计算与反馈：</strong>当火球命中敌人，立即触发伤害计算，并生成动态伤害数字，数字由小变大、逐渐透明化，最后消失，增强战斗打击感。</li>
+                        <li><strong>视觉冲击力：</strong>每次火球命中都会触发爆炸特效，不仅强化了战斗视觉效果，也提升了战斗的节奏感与沉浸感。</li>
+                    </ul>
+                </li>
+                <li><strong>怪物AI行为系统：</strong>
+                    <ul>
+                        <li><strong>智能行为树控制：</strong>采用UE5行为树系统管理怪物行动逻辑，确保怪物行为自然且具备策略性。</li>
+                        <li><strong>巡逻与战斗模式：</strong>默认状态：怪物在设定区域内随机游荡，模拟自然巡逻行为；战斗模式：当受到玩家攻击时，怪物会锁定玩家并进行追击，增加战斗的挑战性与不确定性。</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>技术实现</h3>
+            <ul class="feature-list">
+                <li><strong>底层架构：</strong>
+                    <ul>
+                        <li><strong>UE5蓝图编程：</strong>独立完成角色操控、战斗逻辑、动画系统、AI行为控制等关键模块。</li>
+                        <li><strong>外部资源整合：</strong>合理运用UE5市场资源，优化模型、特效等内容，提高游戏整体质量。</li>
+                    </ul>
+                </li>
+                <li><strong>动画与特效：</strong>
+                    <ul>
+                        <li><strong>关键帧动画：</strong>通过动画通知（Anim Notify）精准控制角色攻击、受击等动画帧事件，确保动画与战斗逻辑同步。</li>
+                        <li><strong>特效优化：</strong>结合粒子系统，使火球、爆炸等特效更加生动。</li>
+                    </ul>
+                </li>
+                <li><strong>交互与优化：</strong>
+                    <ul>
+                        <li><strong>摄像机智能跟随：</strong>确保角色始终处于屏幕中心，提供更舒适的视角体验。</li>
+                        <li><strong>碰撞检测优化：</strong>合理调整碰撞体积，避免角色穿模、卡位等问题，提升流畅度。</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>个人贡献</h3>
+            <ul class="feature-list">
+                <li>独立完成游戏的核心系统开发，包括角色操控、战斗机制、怪物AI等功能。</li>
+                <li>设计并优化动画系统，使角色动作更具流畅性与真实感。</li>
+                <li>优化代码结构与性能，提升游戏运行效率与稳定性，确保Demo顺畅运行。</li>
+            </ul>
+            <h3>项目成果</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="pic\image-62.png" alt="UI界面"></div>
+                <div class="gallery-item"><img src="pic\image-61.png" alt="受击效果"></div>
+                <div class="gallery-item"><img src="pic\image-65.png" alt="敌方特效"></div>
+                <div class="gallery-item"><img src="pic\image-63.png" alt="敌人展示"></div>
+                <div class="gallery-item"><img src="pic\image-64.png" alt="主角流星雨技能展示"></div>
+                <div class="gallery-item"><img src="pic\image-66.png" alt="回复道具展示"></div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <h2>《宝可梦世界》：仿宝可梦文字游戏</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">C++</span>
+            </div>
+            <div class="gallery-item1"><img src="pic\image-11.png" alt="欢迎界面"></div>
+            <h3>项目概述</h3>
+            <p>《宝可梦世界》是一款基于C++语言开发的策略养成类游戏，旨在将一年来所学的C++知识融会贯通，并实践面向对象程序设计的思想。通过此项目，我对游戏底层架构、数据驱动设计、以及用户交互有了更深入的理解。</p>
+            <h3>核心功能与亮点</h3>
+            <ul class="feature-list">
+                <li><strong>策略养成体验：</strong>
+                    <ul>
+                        <li><strong>核心玩法：</strong>模拟宝可梦养成与战斗，玩家培养宝可梦，成功走出迷宫。</li>
+                        <li><strong>战斗系统：</strong>包含技能选择、伤害计算、状态效果等，模拟回合制战斗的策略性。</li>
+                        <li><strong>图鉴系统：</strong>展示各种宝可梦的信息，满足玩家的收集欲望。</li>
+                    </ul>
+                </li>
+                <li><strong>地图探索机制：</strong>
+                    <ul>
+                        <li><strong>开放世界：</strong>设计包含各种地形和事件的地图，供玩家自由探索。</li>
+                        <li><strong>随机事件：</strong>在地图上触发随机事件，增加游戏的趣味性和挑战性。</li>
+                    </ul>
+                </li>
+                <li><strong>精准数据管理：</strong>
+                    <ul>
+                        <li><strong>数据驱动：</strong>宝可梦数据、技能数据、地图数据等均通过外部文件配置，方便修改和扩展。</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>技术实现</h3>
+            <ul class="feature-list">
+                <li><strong>底层框架：</strong>熟练运用C++构建程序框架，合理划分模块，提高代码可维护性。</li>
+                <li><strong>UI系统：</strong>使用控制台输出信息，构建交互式菜单系统，实现用户与游戏的交互。</li>
+                <li><strong>战斗系统：</strong>
+                    <ul>
+                        <li><strong>技能系统：</strong>设计技能类，包含伤害计算、状态效果等属性，实现丰富多样的技能效果。</li>
+                    </ul>
+                </li>
+                <li><strong>图鉴系统：</strong>
+                    <ul>
+                        <li><strong>数据结构：</strong>使用`vector`存储宝可梦信息，实现快速的查找、添加、删除功能。</li>
+                        <li><strong>文件读写：</strong>将宝可梦信息保存到外部文件，实现数据的持久化存储。</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>个人贡献</h3>
+            <ul class="feature-list">
+                <li>独立完成了战斗系统、图鉴系统、UI系统的设计和实现。</li>
+                <li>主导设计并实现了多文件架构，提高代码的可读性和可维护性。</li>
+                <li>优化了数据读取和存储方式，提高了游戏的运行效率。</li>
+            </ul>
+            <h3>项目成果</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="pic\image-11.png" alt="欢迎界面"></div>
+                <div class="gallery-item"><img src="pic\image-12.png" alt="主菜单"></div>
+                <div class="gallery-item"><img src="pic\image-13.png" alt="宝可梦图鉴"></div>
+                <div class="gallery-item"><img src="pic\image-14.png" alt="探索模式"></div>
+                <div class="gallery-item"><img src="pic\image-15.png" alt="胜利"></div>
+                <div class="gallery-item"><img src="pic\image-16.png" alt="背包查看"></div>
+                <div class="gallery-item"><img src="pic\image-17.png" alt="存档成功"></div>
+                <div class="gallery-item"><img src="pic\image-18.png" alt="战斗模式"></div>
+                <div class="gallery-item"><img src="pic\image-19.png" alt="编辑模式"></div>
+                <div class="gallery-item"><img src="pic\image-20.png" alt="编辑模式"></div>
+                <div class="gallery-item"><img src="pic\image-21.png" alt="展示自己的宝可梦"></div>
+                <div class="gallery-item"><img src="pic\image-22.png" alt="退出界面"></div>
+            </div>
+            <h3>总结与心得</h3>
+            <p>本次项目开发不仅加深了我对C++的理解，也让我对游戏开发的流程有了更全面的认识。在实践过程中，我尤其体会到以下几点：</p>
+            <ul>
+                <li><strong>面向对象程序设计：</strong>深入理解了面向对象的设计原则，应用于游戏开发中，提高了代码的可读性和可维护性。</li>
+                <li><strong>数据驱动设计：</strong>掌握了数据驱动的设计思想，将游戏数据与代码分离，方便修改和扩展。</li>
+                <li><strong>模块化设计：</strong>通过模块化设计，将游戏划分为独立的子系统，降低了开发的复杂度。</li>
+                <li><strong>性能优化：</strong>通过优化代码结构和算法，提高了游戏的运行效率和稳定性。</li>
+            </ul>
+        </article>
     </div>
+    
 </body>
 </html>
