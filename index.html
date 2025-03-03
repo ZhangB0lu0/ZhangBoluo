@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集 - 独立游戏开发者</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+            color: #2c3e50;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 8px;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 12px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .card a:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        个人作品集 - 独立游戏开发者
+    </header>
+
+    <div class="container">
+        <!-- 示例项目卡片 -->
+        <div class="card">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="card-content">
+                <h3 class="card-title">纸狼</h3>
+                <p class="card-description">一款2D格斗游戏，独特的美术风格与流畅的战斗系统。</p>
+                <a href="https://yourprojectlink.com">查看详情</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="card-content">
+                <h3 class="card-title">宝可梦世界</h3>
+                <p class="card-description">策略养成类游戏，构建独特的精灵对战体验。</p>
+                <a href="https://yourprojectlink.com">查看详情</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="card-content">
+                <h3 class="card-title">3D动作游戏</h3>
+                <p class="card-description">使用UE5开发的3D动作游戏，强调打击感与战斗流畅度。</p>
+                <a href="https://yourprojectlink.com">查看详情</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 独立游戏开发者 | 由你设计与开发
+    </footer>
+
+</body>
+</html>
