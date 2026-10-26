@@ -1,59 +1,43 @@
-<header>
+# 张宇 · 游戏开发作品集
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+GitHub Pages 个人主页 —— UE5 + GAS 毕业设计《苍穹-离界》、手写 Win32 的 2D 格斗游戏《纸狼》、
+UE5 第三人称动作游戏、俯视角 Roguelike 原型与 C++ 文字策略游戏《宝可梦世界》。
 
-# GitHub Pages
+**在线访问：** https://zhangb0lu0.github.io/ZhangBoluo/
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+## 特点
 
-</header>
+- **纯静态**：单个 `index.html`，内联 CSS / JS，无框架、无构建步骤
+- **图片本地化**：全部转为 WebP，缩略图与全尺寸分离，`loading="lazy"`（约 8 MB）
+- **自建灯箱**：键盘 ← → / 滚轮缩放 / 拖拽 / 移动端滑动，同项目内前后切换
+- **响应式**：1440 / 768 / 500 / 390 px 逐档核对，含 `prefers-reduced-motion` 与打印样式
+- **可访问性**：语义化标签、`aria-*`、可见焦点、灯箱焦点回收、无 JS 时内容仍可见
 
-<!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
--->
+## 部署
 
-## Step 2: Configure your site
+仓库已配置 GitHub Actions（`.github/workflows/static.yml`），推送 `main` 后自动发布整仓库：
 
-_You turned on GitHub Pages! :tada:_
+```bash
+git add index.html assets
+git commit -m "feat: redesign portfolio homepage"
+git push
+```
 
-We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
+## 目录
 
-Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
+```
+index.html                 作品集主页
+assets/img/thesis/         毕业设计截图（webp + 缩略图）
+assets/img/pic/            其余项目截图
+assets/resume-zhangyu.pdf  简历 PDF
+index-legacy-2025.html     旧版首页（备份）
+```
 
-We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
+## 本地预览
 
-### :keyboard: Activity: Configure your site
+双击 `index.html`，或：
 
-1. Browse to the `_config.yml` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
-   ```yml
-   theme: minima
-   ```
-1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
-1. Commit your changes.
-1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+```bash
+python -m http.server 8080
+```
 
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
