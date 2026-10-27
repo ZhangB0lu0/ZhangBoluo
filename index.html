@@ -419,12 +419,12 @@ html.js .reveal.in{opacity:1;transform:none}
     <div>
       <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>游戏客户端 · 引擎 · 图形</span></p>
       <h1 id="heroTitle">张宇<em> Zhang Yu</em></h1>
-      <p class="hero-line">把机制打磨成手感，<br><b>用 C++ 与 UE5 把想法跑起来。</b></p>
-      <p class="hero-lead">软件工程硕士在读，研究方向三维可视化与计算机图形学。独立完成 5 个从零到可玩的项目：
-        UE5 + GAS 的毕业设计、手写 Win32 的 2D 格斗游戏，以及若干动作 / Roguelike 原型。</p>
+      <p class="hero-line">把玩法做实，<br><b>也把底下那层写稳。</b></p>
+      <p class="hero-lead">软件工程硕士在读，方向三维可视化与计算机图形学。做过 5 个能跑起来的游戏 Demo：
+        从 UE5 + GAS 的毕业设计，到不依赖引擎、用 Win32 手写渲染的 2D 格斗游戏。现在在实验室做 CAE 引擎的 C++ 模块。</p>
       <div class="stats">
-        <div class="stat"><b>05<small>个</small></b><span>完整可玩项目</span></div>
-        <div class="stat"><b>03<small>年</small></b><span>独立开发经验</span></div>
+        <div class="stat"><b>05<small>个</small></b><span>可玩的 Demo</span></div>
+        <div class="stat"><b>03<small>年</small></b><span>独立开发</span></div>
         <div class="stat"><b>02<small>项</small></b><span>省级竞赛奖项</span></div>
       </div>
       <div class="actions">
@@ -453,7 +453,7 @@ html.js .reveal.in{opacity:1;transform:none}
     <div class="sec-head reveal">
       <span class="sec-no">01</span>
       <h2 id="workTitle">作品</h2>
-      <p>从引擎内的 C++ 架构到手写 Win32 渲染管线，每个项目都能跑、能玩、有演示。</p>
+      <p>5 个 Demo，都能跑、能玩、有演示。从引擎内的 C++ 架构，到不依赖引擎的 Win32 渲染管线。</p>
     </div>
     <div class="filters reveal" role="group" aria-label="按技术栈筛选作品">
       <button class="chip is-on" type="button" data-filter="all">全部<span>5</span></button>
@@ -472,7 +472,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <div class="tags"><span class="tag">UE5.4</span><span class="tag">C++ / 蓝图混合架构</span><span class="tag">Gameplay Ability System</span><span class="tag">Enhanced Input</span><span class="tag">UWorldSubsystem</span><span class="tag">行为树 · NavMesh</span><span class="tag">UMG / Slate</span><span class="tag">Level Sequence</span></div>
     </div>
   </div>
-  <p class="lead">基于 Unreal Engine 5.4 独立设计与开发的俯视角动作解谜游戏。采用 <b>「C++ 构建底层核心框架 + 蓝图负责业务参数与表现层」</b>的工程模式，深度落地虚幻官方技能框架 <b>GAS</b>，并把核心解谜机制「现实界 / 离界」双界切换抽象为受 GAS 状态标签驱动的全局能力体系，完成从开场过场演出、能力解锁、多段连击与范围大招战斗、区域机关解谜，到两阶段首领战的完整闭环。</p>
+  <p class="lead">俯视角动作解谜游戏，毕业设计，从架构到关卡一个人做完。底层用 C++ 搭框架，参数与表现层交给蓝图；核心机制「现实界 / 离界」没有写成关卡里的一次性触发器，而是做成受 <b>GAS</b> 状态标签驱动的 Hold 技能——按 Space 翻转世界，断桥与栅栏跟着切换可见性和碰撞，可走路径随之重算。战斗侧做了鼠标反投影锁定朝向、三段连击、范围大招与法力消耗，AI 侧是行为树 + NavMesh，首领两阶段：血量归零后假死起身，移速 1.25 倍、攻击半径 1.2 倍。串起开场 Level Sequence、能力解锁、机关解谜到通关的完整流程。</p>
   <a class="watch" href="https://www.bilibili.com/video/BV1hFno6wEZe" target="_blank" rel="noopener noreferrer"><span class="watch-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg></span><span class="watch-txt"><b>《苍穹-离界》实机演示 · 2 分 06 秒</b><i>bilibili.com</i></span><span class="watch-go" aria-hidden="true">↗</span></a>
   <div class="gal-wrap"><div class="gal"><button class="shot" type="button" data-full="assets/img/thesis/01.webp" data-title="现世状态：栅栏阻挡通行，隐藏桥梁不可见" aria-label="放大查看：现世状态：栅栏阻挡通行，隐藏桥梁不可见"><img src="assets/img/thesis/01-thumb.webp" alt="现世状态：栅栏阻挡通行，隐藏桥梁不可见" loading="lazy" width="720" height="368"><span>现世状态：栅栏阻挡通行，隐藏桥梁不可见</span></button><button class="shot" type="button" data-full="assets/img/thesis/02.webp" data-title="离界状态：按下 Space 切换后栅栏消失、隐藏木桥显现" aria-label="放大查看：离界状态：按下 Space 切换后栅栏消失、隐藏木桥显现"><img src="assets/img/thesis/02-thumb.webp" alt="离界状态：按下 Space 切换后栅栏消失、隐藏木桥显现" loading="lazy" width="720" height="367"><span>离界状态：按下 Space 切换后栅栏消失、隐藏木桥显现</span></button><button class="shot" type="button" data-full="assets/img/thesis/03.png" data-title="三段近战普攻连段与刀光拖尾特效" aria-label="放大查看：三段近战普攻连段与刀光拖尾特效"><img src="assets/img/thesis/03.png" alt="三段近战普攻连段与刀光拖尾特效" loading="lazy" width="600" height="309"><span>三段近战普攻连段与刀光拖尾特效</span></button><button class="shot" type="button" data-full="assets/img/thesis/04.png" data-title="第三段连击的紫焰刀光特效" aria-label="放大查看：第三段连击的紫焰刀光特效"><img src="assets/img/thesis/04.png" alt="第三段连击的紫焰刀光特效" loading="lazy" width="600" height="316"><span>第三段连击的紫焰刀光特效</span></button><button class="shot" type="button" data-full="assets/img/thesis/05.webp" data-title="消耗法力释放 360° 范围大招" aria-label="放大查看：消耗法力释放 360° 范围大招"><img src="assets/img/thesis/05-thumb.webp" alt="消耗法力释放 360° 范围大招" loading="lazy" width="720" height="344"><span>消耗法力释放 360° 范围大招</span></button><button class="shot tall" type="button" data-full="assets/img/thesis/06.webp" data-title="穿过红色传送门解锁双界切换能力" aria-label="放大查看：穿过红色传送门解锁双界切换能力"><img src="assets/img/thesis/06-thumb.webp" alt="穿过红色传送门解锁双界切换能力" loading="lazy" width="720" height="602"><span>穿过红色传送门解锁双界切换能力</span></button><button class="shot" type="button" data-full="assets/img/thesis/07.webp" data-title="Level Sequence 开场过场：终局首领镇守绿色传送门" aria-label="放大查看：Level Sequence 开场过场：终局首领镇守绿色传送门"><img src="assets/img/thesis/07-thumb.webp" alt="Level Sequence 开场过场：终局首领镇守绿色传送门" loading="lazy" width="720" height="397"><span>Level Sequence 开场过场：终局首领镇守绿色传送门</span></button><button class="shot" type="button" data-full="assets/img/thesis/08.webp" data-title="敌人 AI 行为树 BT_Enemy 与黑板决策资产" aria-label="放大查看：敌人 AI 行为树 BT_Enemy 与黑板决策资产"><img src="assets/img/thesis/08-thumb.webp" alt="敌人 AI 行为树 BT_Enemy 与黑板决策资产" loading="lazy" width="720" height="453"><span>敌人 AI 行为树 BT_Enemy 与黑板决策资产</span></button><button class="shot extra" type="button" data-full="assets/img/thesis/09.webp" data-title="首领假死复活进入二阶段狂暴战斗" aria-label="放大查看：首领假死复活进入二阶段狂暴战斗"><img src="assets/img/thesis/09-thumb.webp" alt="首领假死复活进入二阶段狂暴战斗" loading="lazy" width="720" height="369"><span>首领假死复活进入二阶段狂暴战斗</span></button><button class="shot extra" type="button" data-full="assets/img/thesis/10.webp" data-title="击败二阶段首领后激活绿色传送门触发通关界面" aria-label="放大查看：击败二阶段首领后激活绿色传送门触发通关界面"><img src="assets/img/thesis/10-thumb.webp" alt="击败二阶段首领后激活绿色传送门触发通关界面" loading="lazy" width="720" height="369"><span>击败二阶段首领后激活绿色传送门触发通关界面</span></button><button class="shot tall extra" type="button" data-full="assets/img/thesis/11.webp" data-title="MP_Island 孤岛关卡全景与双界机关布局" aria-label="放大查看：MP_Island 孤岛关卡全景与双界机关布局"><img src="assets/img/thesis/11-thumb.webp" alt="MP_Island 孤岛关卡全景与双界机关布局" loading="lazy" width="720" height="520"><span>MP_Island 孤岛关卡全景与双界机关布局</span></button></div><button class="gal-more" type="button">展开全部 11 张</button></div>
   <button class="acc" type="button" data-acc aria-expanded="false">
@@ -490,7 +490,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <div class="tags"><span class="tag">UE5 蓝图</span><span class="tag">动画蒙太奇</span><span class="tag">Root Motion</span><span class="tag">物理判定</span><span class="tag">AI 行为树</span><span class="tag">UMG</span></div>
     </div>
   </div>
-  <p class="lead">一款基于 UE5 独立开发的 3D 动作游戏原型，目标是在 3 个月内跑通核心战斗、敌人 AI 与关卡场景，产出完整可玩版本。设计上分别借鉴 <b>《只狼》</b>的弹反、精准锁定与短无敌帧闪避，<b>《浪人崛起》</b>的锁定态摄像机优化，以及 <b>《原神》</b>的平 A 连段节奏。</p>
+  <p class="lead">3 个月内从零做到可玩的动作原型，重点全在战斗手感。弹反、锁定、闪避、五段普攻与敌人 AI 都已跑通：中键球形检测锁定最近敌人，锁定后摄像机自动调距离和朝向，缓解目标丢失与镜头抖动；闪避用短无敌帧配 Root Motion，判定挂在 Anim Notify 上。参考《只狼》的弹反与锁定、《浪人崛起》的锁定态摄像机、《原神》的平 A 连段节奏。</p>
   
   <div class="gal-wrap"><div class="gal"><button class="shot" type="button" data-full="assets/img/pic/image-23.webp" data-title="游戏开始界面" aria-label="放大查看：游戏开始界面"><img src="assets/img/pic/image-23-thumb.webp" alt="游戏开始界面" loading="lazy" width="720" height="360"><span>游戏开始界面</span></button><button class="shot" type="button" data-full="assets/img/pic/image-41.webp" data-title="未锁定状态自由移动" aria-label="放大查看：未锁定状态自由移动"><img src="assets/img/pic/image-41-thumb.webp" alt="未锁定状态自由移动" loading="lazy" width="720" height="407"><span>未锁定状态自由移动</span></button><button class="shot" type="button" data-full="assets/img/pic/image-24.webp" data-title="锁定敌人后显示名称与血量" aria-label="放大查看：锁定敌人后显示名称与血量"><img src="assets/img/pic/image-24-thumb.webp" alt="锁定敌人后显示名称与血量" loading="lazy" width="720" height="406"><span>锁定敌人后显示名称与血量</span></button><button class="shot" type="button" data-full="assets/img/pic/image-43.webp" data-title="攻击连段 1" aria-label="放大查看：攻击连段 1"><img src="assets/img/pic/image-43-thumb.webp" alt="攻击连段 1" loading="lazy" width="720" height="384"><span>攻击连段 1</span></button><button class="shot" type="button" data-full="assets/img/pic/image-28.webp" data-title="攻击连段 2" aria-label="放大查看：攻击连段 2"><img src="assets/img/pic/image-28-thumb.webp" alt="攻击连段 2" loading="lazy" width="720" height="401"><span>攻击连段 2</span></button><button class="shot" type="button" data-full="assets/img/pic/image-46.webp" data-title="攻击连段 3" aria-label="放大查看：攻击连段 3"><img src="assets/img/pic/image-46-thumb.webp" alt="攻击连段 3" loading="lazy" width="720" height="379"><span>攻击连段 3</span></button><button class="shot" type="button" data-full="assets/img/pic/image-29.webp" data-title="攻击连段 4" aria-label="放大查看：攻击连段 4"><img src="assets/img/pic/image-29-thumb.webp" alt="攻击连段 4" loading="lazy" width="720" height="404"><span>攻击连段 4</span></button><button class="shot" type="button" data-full="assets/img/pic/image-47.webp" data-title="攻击连段 5" aria-label="放大查看：攻击连段 5"><img src="assets/img/pic/image-47-thumb.webp" alt="攻击连段 5" loading="lazy" width="720" height="377"><span>攻击连段 5</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-31.webp" data-title="锁定状态下的八向移动" aria-label="放大查看：锁定状态下的八向移动"><img src="assets/img/pic/image-31-thumb.webp" alt="锁定状态下的八向移动" loading="lazy" width="720" height="406"><span>锁定状态下的八向移动</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-34.webp" data-title="锁定状态八向移动 · 侧向" aria-label="放大查看：锁定状态八向移动 · 侧向"><img src="assets/img/pic/image-34-thumb.webp" alt="锁定状态八向移动 · 侧向" loading="lazy" width="720" height="408"><span>锁定状态八向移动 · 侧向</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-35.webp" data-title="锁定状态八向移动 · 后退" aria-label="放大查看：锁定状态八向移动 · 后退"><img src="assets/img/pic/image-35-thumb.webp" alt="锁定状态八向移动 · 后退" loading="lazy" width="720" height="399"><span>锁定状态八向移动 · 后退</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-36.webp" data-title="闪避动作 1" aria-label="放大查看：闪避动作 1"><img src="assets/img/pic/image-36-thumb.webp" alt="闪避动作 1" loading="lazy" width="720" height="403"><span>闪避动作 1</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-37.webp" data-title="闪避动作 2" aria-label="放大查看：闪避动作 2"><img src="assets/img/pic/image-37-thumb.webp" alt="闪避动作 2" loading="lazy" width="720" height="403"><span>闪避动作 2</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-38.webp" data-title="闪避动作 3" aria-label="放大查看：闪避动作 3"><img src="assets/img/pic/image-38-thumb.webp" alt="闪避动作 3" loading="lazy" width="720" height="405"><span>闪避动作 3</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-40.webp" data-title="闪避动作 4" aria-label="放大查看：闪避动作 4"><img src="assets/img/pic/image-40-thumb.webp" alt="闪避动作 4" loading="lazy" width="720" height="404"><span>闪避动作 4</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-79.webp" data-title="跳跃动作" aria-label="放大查看：跳跃动作"><img src="assets/img/pic/image-79-thumb.webp" alt="跳跃动作" loading="lazy" width="720" height="399"><span>跳跃动作</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-48.webp" data-title="游戏结束界面" aria-label="放大查看：游戏结束界面"><img src="assets/img/pic/image-48-thumb.webp" alt="游戏结束界面" loading="lazy" width="720" height="360"><span>游戏结束界面</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-70.webp" data-title="测试场景 1" aria-label="放大查看：测试场景 1"><img src="assets/img/pic/image-70-thumb.webp" alt="测试场景 1" loading="lazy" width="720" height="374"><span>测试场景 1</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-71.webp" data-title="测试场景 2" aria-label="放大查看：测试场景 2"><img src="assets/img/pic/image-71-thumb.webp" alt="测试场景 2" loading="lazy" width="720" height="375"><span>测试场景 2</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-73.webp" data-title="测试场景 3" aria-label="放大查看：测试场景 3"><img src="assets/img/pic/image-73-thumb.webp" alt="测试场景 3" loading="lazy" width="720" height="383"><span>测试场景 3</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-76.webp" data-title="测试场景 4" aria-label="放大查看：测试场景 4"><img src="assets/img/pic/image-76-thumb.webp" alt="测试场景 4" loading="lazy" width="720" height="386"><span>测试场景 4</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-75.webp" data-title="测试场景 5" aria-label="放大查看：测试场景 5"><img src="assets/img/pic/image-75-thumb.webp" alt="测试场景 5" loading="lazy" width="720" height="384"><span>测试场景 5</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-72.webp" data-title="测试场景 6" aria-label="放大查看：测试场景 6"><img src="assets/img/pic/image-72-thumb.webp" alt="测试场景 6" loading="lazy" width="720" height="377"><span>测试场景 6</span></button></div><button class="gal-more" type="button">展开全部 23 张</button></div>
   <button class="acc" type="button" data-acc aria-expanded="false">
@@ -508,7 +508,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <div class="tags"><span class="tag">C++11</span><span class="tag">Win32 API</span><span class="tag">GDI+</span><span class="tag">双缓冲</span><span class="tag">AABB 碰撞</span><span class="tag">fstream 录像</span></div>
     </div>
   </div>
-  <p class="lead">一款致敬《死神 VS 火影》的 2D 格斗游戏，完全基于 C++11 与 Win32 API 从零构建，不使用任何商业引擎。项目用于贯通 C++ 与 Windows 编程知识，并完整走通一款游戏从底层框架、渲染管线到内容工具（地图编辑器、对局回放）的开发流程。</p>
+  <p class="lead">不用任何商业引擎，C++11 + Win32 API 从零写出来的 2D 格斗游戏，致敬《死神 VS 火影》。自己封装消息循环处理键鼠输入，GDI+ 绘制配双缓冲压住高频重绘的闪烁，定时器控逻辑帧率；碰撞是自定义 AABB 逐帧矩形相交。除了对战本身，还做了两样工具：可实时保存和试玩的地图编辑器，以及用 fstream 把操作指令逐帧序列化、能暂停拖进度的对局回放。</p>
   <a class="watch" href="https://www.bilibili.com/video/BV1SPno6bE37" target="_blank" rel="noopener noreferrer"><span class="watch-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg></span><span class="watch-txt"><b>《纸狼》实机演示</b><i>bilibili.com</i></span><span class="watch-go" aria-hidden="true">↗</span></a>
   <div class="gal-wrap"><div class="gal"><button class="shot" type="button" data-full="assets/img/pic/image.png" data-title="游戏主菜单" aria-label="放大查看：游戏主菜单"><img src="assets/img/pic/image.png" alt="游戏主菜单" loading="lazy" width="457" height="240"><span>游戏主菜单</span></button><button class="shot" type="button" data-full="assets/img/pic/image-1.png" data-title="战斗场景" aria-label="放大查看：战斗场景"><img src="assets/img/pic/image-1.png" alt="战斗场景" loading="lazy" width="456" height="240"><span>战斗场景</span></button><button class="shot" type="button" data-full="assets/img/pic/image-2.png" data-title="角色攻击动作" aria-label="放大查看：角色攻击动作"><img src="assets/img/pic/image-2.png" alt="角色攻击动作" loading="lazy" width="457" height="241"><span>角色攻击动作</span></button><button class="shot" type="button" data-full="assets/img/pic/image-3.png" data-title="招架 / 弹反动作" aria-label="放大查看：招架 / 弹反动作"><img src="assets/img/pic/image-3.png" alt="招架 / 弹反动作" loading="lazy" width="457" height="240"><span>招架 / 弹反动作</span></button><button class="shot" type="button" data-full="assets/img/pic/image-4.png" data-title="空中坠落动作" aria-label="放大查看：空中坠落动作"><img src="assets/img/pic/image-4.png" alt="空中坠落动作" loading="lazy" width="457" height="240"><span>空中坠落动作</span></button><button class="shot" type="button" data-full="assets/img/pic/image-5.png" data-title="受击动作与游戏结束界面" aria-label="放大查看：受击动作与游戏结束界面"><img src="assets/img/pic/image-5.png" alt="受击动作与游戏结束界面" loading="lazy" width="458" height="239"><span>受击动作与游戏结束界面</span></button><button class="shot" type="button" data-full="assets/img/pic/image-6.png" data-title="地图编辑器界面" aria-label="放大查看：地图编辑器界面"><img src="assets/img/pic/image-6.png" alt="地图编辑器界面" loading="lazy" width="457" height="241"><span>地图编辑器界面</span></button><button class="shot" type="button" data-full="assets/img/pic/image-7.png" data-title="地图编辑：放置方块" aria-label="放大查看：地图编辑：放置方块"><img src="assets/img/pic/image-7.png" alt="地图编辑：放置方块" loading="lazy" width="456" height="240"><span>地图编辑：放置方块</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-8.png" data-title="地图编辑：放置小平台" aria-label="放大查看：地图编辑：放置小平台"><img src="assets/img/pic/image-8.png" alt="地图编辑：放置小平台" loading="lazy" width="456" height="242"><span>地图编辑：放置小平台</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-9.png" data-title="对局回放界面（含进度条）" aria-label="放大查看：对局回放界面（含进度条）"><img src="assets/img/pic/image-9.png" alt="对局回放界面（含进度条）" loading="lazy" width="456" height="242"><span>对局回放界面（含进度条）</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-10.png" data-title="回放暂停界面" aria-label="放大查看：回放暂停界面"><img src="assets/img/pic/image-10.png" alt="回放暂停界面" loading="lazy" width="458" height="240"><span>回放暂停界面</span></button></div><button class="gal-more" type="button">展开全部 11 张</button></div>
   <button class="acc" type="button" data-acc aria-expanded="false">
@@ -526,7 +526,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <div class="tags"><span class="tag">UE5 蓝图</span><span class="tag">上下半身动画分离</span><span class="tag">行为树 AI</span><span class="tag">Anim Notify</span><span class="tag">Niagara 粒子</span><span class="tag">UMG</span></div>
     </div>
   </div>
-  <p class="lead">一款基于 UE5 开发的俯视角 RogueLike 动作 Demo，独立完成核心功能的设计与实现。项目重点在角色操控与动画分层、远程投射物战斗循环，以及行为树驱动的怪物 AI，也是对蓝图工程组织方式的一次系统实践。</p>
+  <p class="lead">UE5 俯视角 RogueLike 动作 Demo，练的是动画分层和行为树。角色上下半身分开控制：上半身攻击时优先播攻击动画，否则跟下半身同步；下半身按移动速度在走和跑之间切换。战斗是远程投射物循环——攻击动画指定帧生成火球，命中即结算伤害并弹出伤害数字。怪物默认在区域内随机游荡，被打了就锁定玩家追击。</p>
   
   <div class="gal-wrap"><div class="gal"><button class="shot" type="button" data-full="assets/img/pic/image-66.webp" data-title="游戏 UI 界面" aria-label="放大查看：游戏 UI 界面"><img src="assets/img/pic/image-66-thumb.webp" alt="游戏 UI 界面" loading="lazy" width="720" height="410"><span>游戏 UI 界面</span></button><button class="shot" type="button" data-full="assets/img/pic/image-62.webp" data-title="战斗 UI 与技能栏" aria-label="放大查看：战斗 UI 与技能栏"><img src="assets/img/pic/image-62-thumb.webp" alt="战斗 UI 与技能栏" loading="lazy" width="720" height="409"><span>战斗 UI 与技能栏</span></button><button class="shot" type="button" data-full="assets/img/pic/image-61.webp" data-title="角色受击反馈" aria-label="放大查看：角色受击反馈"><img src="assets/img/pic/image-61-thumb.webp" alt="角色受击反馈" loading="lazy" width="720" height="402"><span>角色受击反馈</span></button><button class="shot" type="button" data-full="assets/img/pic/image-65.webp" data-title="敌方技能特效" aria-label="放大查看：敌方技能特效"><img src="assets/img/pic/image-65-thumb.webp" alt="敌方技能特效" loading="lazy" width="720" height="399"><span>敌方技能特效</span></button><button class="shot" type="button" data-full="assets/img/pic/image-63.webp" data-title="敌人与行为树驱动表现" aria-label="放大查看：敌人与行为树驱动表现"><img src="assets/img/pic/image-63-thumb.webp" alt="敌人与行为树驱动表现" loading="lazy" width="720" height="412"><span>敌人与行为树驱动表现</span></button><button class="shot" type="button" data-full="assets/img/pic/image-64.webp" data-title="主角「流星雨」技能展示" aria-label="放大查看：主角「流星雨」技能展示"><img src="assets/img/pic/image-64-thumb.webp" alt="主角「流星雨」技能展示" loading="lazy" width="720" height="410"><span>主角「流星雨」技能展示</span></button></div></div>
   <button class="acc" type="button" data-acc aria-expanded="false">
@@ -544,7 +544,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <div class="tags"><span class="tag">C++</span><span class="tag">面向对象</span><span class="tag">数据驱动</span><span class="tag">文件持久化</span><span class="tag">多文件架构</span></div>
     </div>
   </div>
-  <p class="lead">一款基于 C++ 开发的策略养成类文字游戏，把一年所学的 C++ 知识融会贯通，并实践面向对象与数据驱动的设计思想。宝可梦、技能与地图数据全部由外部文件配置，代码只负责规则，内容交给数据。</p>
+  <p class="lead">用 C++ 写的回合制养成文字游戏，重点是数据驱动。宝可梦、技能、地图全部由外部文件配置，改内容不用动代码；代码只管规则和流程。做完了图鉴、探索、战斗、背包与存档持久化，按战斗 / 图鉴 / 地图 / UI 拆成多文件结构。</p>
   
   <div class="gal-wrap"><div class="gal"><button class="shot" type="button" data-full="assets/img/pic/image-11.png" data-title="游戏欢迎界面" aria-label="放大查看：游戏欢迎界面"><img src="assets/img/pic/image-11.png" alt="游戏欢迎界面" loading="lazy" width="422" height="203"><span>游戏欢迎界面</span></button><button class="shot" type="button" data-full="assets/img/pic/image-12.png" data-title="游戏主菜单" aria-label="放大查看：游戏主菜单"><img src="assets/img/pic/image-12.png" alt="游戏主菜单" loading="lazy" width="320" height="171"><span>游戏主菜单</span></button><button class="shot" type="button" data-full="assets/img/pic/image-13.png" data-title="宝可梦图鉴" aria-label="放大查看：宝可梦图鉴"><img src="assets/img/pic/image-13.png" alt="宝可梦图鉴" loading="lazy" width="457" height="255"><span>宝可梦图鉴</span></button><button class="shot" type="button" data-full="assets/img/pic/image-14.png" data-title="探索模式" aria-label="放大查看：探索模式"><img src="assets/img/pic/image-14.png" alt="探索模式" loading="lazy" width="457" height="233"><span>探索模式</span></button><button class="shot" type="button" data-full="assets/img/pic/image-15.png" data-title="战斗胜利界面" aria-label="放大查看：战斗胜利界面"><img src="assets/img/pic/image-15.png" alt="战斗胜利界面" loading="lazy" width="457" height="232"><span>战斗胜利界面</span></button><button class="shot" type="button" data-full="assets/img/pic/image-16.png" data-title="背包查看" aria-label="放大查看：背包查看"><img src="assets/img/pic/image-16.png" alt="背包查看" loading="lazy" width="457" height="234"><span>背包查看</span></button><button class="shot" type="button" data-full="assets/img/pic/image-17.png" data-title="存档成功提示" aria-label="放大查看：存档成功提示"><img src="assets/img/pic/image-17.png" alt="存档成功提示" loading="lazy" width="457" height="236"><span>存档成功提示</span></button><button class="shot" type="button" data-full="assets/img/pic/image-18.png" data-title="战斗模式" aria-label="放大查看：战斗模式"><img src="assets/img/pic/image-18.png" alt="战斗模式" loading="lazy" width="457" height="268"><span>战斗模式</span></button><button class="shot tall extra" type="button" data-full="assets/img/pic/image-19.png" data-title="编辑模式 1" aria-label="放大查看：编辑模式 1"><img src="assets/img/pic/image-19.png" alt="编辑模式 1" loading="lazy" width="340" height="373"><span>编辑模式 1</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-20.png" data-title="编辑模式 2" aria-label="放大查看：编辑模式 2"><img src="assets/img/pic/image-20.png" alt="编辑模式 2" loading="lazy" width="457" height="190"><span>编辑模式 2</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-21.png" data-title="宝可梦展示" aria-label="放大查看：宝可梦展示"><img src="assets/img/pic/image-21.png" alt="宝可梦展示" loading="lazy" width="457" height="194"><span>宝可梦展示</span></button><button class="shot extra" type="button" data-full="assets/img/pic/image-22.png" data-title="退出界面" aria-label="放大查看：退出界面"><img src="assets/img/pic/image-22.png" alt="退出界面" loading="lazy" width="457" height="223"><span>退出界面</span></button></div><button class="gal-more" type="button">展开全部 12 张</button></div>
   <button class="acc" type="button" data-acc aria-expanded="false">
@@ -560,7 +560,7 @@ html.js .reveal.in{opacity:1;transform:none}
     <div class="sec-head reveal">
       <span class="sec-no">02</span>
       <h2 id="aboutTitle">关于</h2>
-      <p>工程习惯：先想清楚数据与状态归谁管，再动手写表现层。</p>
+      <p>写代码前先想清楚数据和状态归谁管，再动表现层。</p>
     </div>
     <div class="two">
       <div class="edu reveal">
@@ -572,14 +572,14 @@ html.js .reveal.in{opacity:1;transform:none}
         <div class="edu-item">
           <h3>浙江农林大学 · 计算机科学与技术</h3>
           <p class="when">2022.09 — 2026.06 · 本科</p>
-          <p>专业排名 36 / 150。在校期间完成全部个人游戏项目与竞赛实践。</p>
+          <p>专业排名 36 / 150。游戏项目和竞赛基本都在这个阶段做完的。</p>
         </div>
       </div>
       <div class="note-card reveal">
         <h4>我在做什么</h4>
         <p>目前在实验室的 <b>iGameVis</b> 通用 CAE 仿真后处理引擎中做 C++ 开发：网格质量评估 Filter、
           多块装配体表面提取、多数据集组合与渲染问题修复，对照 ParaView / Verdict 完成 20 项指标的数值验证。</p>
-        <p>业余持续在 UE5 里做动作游戏的战斗原型，关注手感、判定与状态机的边界情况。</p>
+        <p>业余在 UE5 里做动作游戏的战斗原型，主要盯手感和判定的边界情况。</p>
         <div class="now"><span class="dot" aria-hidden="true"></span><span>正在学习 GAMES202 · 实时渲染</span></div>
       </div>
     </div>
@@ -591,25 +591,24 @@ html.js .reveal.in{opacity:1;transform:none}
     <div class="sec-head reveal">
       <span class="sec-no">03</span>
       <h2 id="skillsTitle">技能</h2>
-      <p>用得最多、也踩过坑的部分。</p>
+      <p>项目里真正用到、也踩过坑的部分。</p>
     </div>
     <div class="skill-grid">
       <div class="skill reveal"><h3><span aria-hidden="true"></span>C++</h3>
-        <p>熟悉 C++11 常用特性，能运用智能指针、模板与多态做逻辑开发；实践见 <b>iGameVis</b>、<b>UE5</b>、
-          <b>Win32 格斗游戏</b>。</p></div>
+        <p>熟悉 C++11 常用特性，能用智能指针、模板和多态写逻辑。项目见 <b>iGameVis</b>、
+          <b>UE5</b> 与 <b>Win32 格斗游戏</b>。</p></div>
       <div class="skill reveal"><h3><span aria-hidden="true"></span>UE5 / 引擎</h3>
-        <p>C++ 与蓝图协同开发；能结合 <b>GAS</b>、状态机、动画系统与行为树实现核心战斗与交互逻辑，
+        <p>能用 C++ 与蓝图协同开发；结合 <b>GAS</b>、状态机、动画系统与行为树做核心战斗和交互逻辑。
           熟悉 NavMesh 寻路、Level Sequence 与 UMG / Slate。</p></div>
       <div class="skill reveal"><h3><span aria-hidden="true"></span>图形学</h3>
-        <p>完成 GAMES101 / GAMES102 及作业，掌握变换、光栅化、几何与着色基础管线；正在学习 GAMES202 实时渲染。</p></div>
+        <p>做完 GAMES101 / GAMES102 及作业，掌握变换、光栅化、几何与着色基础管线；正在学 GAMES202 实时渲染。</p></div>
       <div class="skill reveal"><h3><span aria-hidden="true"></span>OpenGL / GLSL</h3>
-        <p>能搭建 OpenGL 基础管线，具备 Assimp 模型加载、Blinn-Phong 光照与自定义着色器实践；
-          了解 Compute Shader 与 GPU 剔除思想。</p></div>
+        <p>能搭 OpenGL 基础管线，做过 Assimp 模型加载、Blinn-Phong 光照和自定义着色器；
+          了解 Compute Shader 与 GPU 剔除思路。</p></div>
       <div class="skill reveal"><h3><span aria-hidden="true"></span>工具链</h3>
-        <p>Visual Studio、Rider、Qt、Git；熟练使用 AI Agent 辅助编程与工程落地
-          （Claude Code / Codex / CLI Agent）。</p></div>
+        <p>Visual Studio、Rider、Qt、Git。日常用 Claude Code / Codex / CLI Agent 辅助写代码和查问题。</p></div>
       <div class="skill reveal"><h3><span aria-hidden="true"></span>语言</h3>
-        <p>英语 CET-6（542 分），可无障碍阅读英文技术文档与引擎源码。</p></div>
+        <p>英语 CET-6（542 分），能读英文技术文档和引擎源码。</p></div>
     </div>
   </div>
 </section>
@@ -632,8 +631,8 @@ html.js .reveal.in{opacity:1;transform:none}
 <section id="contact" aria-labelledby="contactTitle">
   <div class="wrap">
     <div class="cta reveal">
-      <h2 id="contactTitle">找一个能把机制做扎实的实习生吗？</h2>
-      <p>正在寻找游戏客户端 / 引擎 / 图形方向的实习机会。项目细节、源码与实机演示，随时可以聊。</p>
+      <h2 id="contactTitle">在找游戏客户端 / 引擎 / 图形方向的实习生</h2>
+      <p>项目细节、源码和实机演示都可以聊，随时联系。</p>
       <div class="cta-links">
         <a class="btn btn-primary" href="mailto:zhangyu_cs_dev@163.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
